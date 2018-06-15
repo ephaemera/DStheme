@@ -25,6 +25,7 @@ DStheme is a clean, minimal writer's portfolio WordPress Theme.
   mikito tateisi 333584
   nik macmillan 153579
   ray hennessy 118046
+  dave michuda 54061
 
 == Changelog ==
 

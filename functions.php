@@ -20,6 +20,12 @@
     // Add default posts and comments RSS feed links to head.
   	add_theme_support( 'automatic-feed-links' );
 
+    // Add custom logo support
+    add_image_size('mytheme-logo', 100, 100);
+    add_theme_support('custom-logo', array(
+      'size' => 'mytheme-logo'
+    ));
+
     // Let WordPress manage the document title
     add_theme_support( 'title-tag' );
 

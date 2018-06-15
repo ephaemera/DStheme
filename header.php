@@ -16,11 +16,22 @@
     </style>
     <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
-  <a id="top"></a>
+<body id="top" <?php body_class(); ?>>
     <nav class="navbar navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">dS</a>
+          <div class="logo-group">
+            <a class="navbar-brand logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php
+            // Display the Custom Logo
+            the_custom_logo();
+
+            // No Custom Logo, just display the site's name
+            if (!has_custom_logo()) {
+                ?>
+                <h1><?php bloginfo('name'); ?></h1>
+                <?php
+            }
+            ?></a>
+          </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

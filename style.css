@@ -4,7 +4,7 @@ Theme URI: https://dedestolee.com
 Author: Dede Stolee
 Author URI: https://dedestolee.com/dstheme
 Description: A clean, minimal writer portfolio theme.
-Version: 1.0.0
+Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: dstheme
@@ -39,6 +39,11 @@ a {
 	 -ms-transition: all 0.3s ease-in-out;
 	 -o-transition: all 0.3s ease-in-out;
 	 transition: all 0.3s ease-in-out;
+   color: #b59f5b;
+}
+a:hover {
+  color: #222;
+  text-decoration: none;
 }
 h1,
 h2,
@@ -96,8 +101,11 @@ img {
     letter-spacing: -5px;
     color: #444;
 }
+.custom-logo-link img {
+  max-width: 3rem;
+  margin:1rem 1rem 1.25rem -1rem;
+}
 .navbar-dark .navbar-toggler {
-    /* 4312 bootstrap.css */
     color: rgba(255, 255, 255, 1);
     border-color: rgba(255, 255, 255, 1);
 }
@@ -151,8 +159,8 @@ img {
     font-family: 'Playfair Display', serif;
     font-weight: bold;
 }
-.single img,
-.single .entry-header p {
+.page-single img,
+.single .entry-header p, .single .entry-header img {
     padding-bottom: 1rem;
 }
 .entry-header-excerpt {
@@ -172,7 +180,7 @@ img {
 }
 @media (min-width: 768px) {
     .entry-archive h2 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         margin: 0;
         text-align: right;
     }
@@ -245,7 +253,7 @@ p.meta a:hover {
     top: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(21, 21, 21, 0.5);
+    background-color: rgba(21, 21, 21, 0.65);
     width: 100%;
     height: 100%;
 }
@@ -300,10 +308,9 @@ article {
     line-height: .6;
     /* Reduced from lh=1 to adjust drop-cap between FF and GC */
     font-family: 'Playfair Display', serif;
-    font-weight: bold;
     padding-right: 6px;
     margin-bottom: -6px;
-    margin-top: 11px;
+    margin-top: 10px;
     /* added to adjust drop-cap between FF and GC */
 }
 .single-content>p:first-child:first-letter {
@@ -312,10 +319,9 @@ article {
     line-height: .6;
     /* Reduced from lh=1 to adjust drop-cap between FF and GC */
     font-family: 'Playfair Display', serif;
-    font-weight: bold;
     padding-right: 6px;
     margin-bottom: -6px;
-    margin-top: 11px;
+    margin-top: 10px;
     /* added to adjust drop-cap between FF and GC */
 }
 blockquote {
@@ -341,6 +347,10 @@ blockquote:before {
 }
 blockquote p {
     margin-top: -1.25rem;
+}
+.ext-quote {
+	font-size: 14px;
+	padding: .75rem;
 }
 
 /* ======   Post Navigation ========= */
@@ -704,4 +714,10 @@ article .comment-body {
     font-size: 12pt !important;
     font-family: 'Quattrocento Sans', sans-serif;
     letter-spacing: 0 !important;
+}
+
+/*     Ajax Search Lite Plugin Override */
+
+.hd-search {
+	display: none;
 }
