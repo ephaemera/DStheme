@@ -13,7 +13,7 @@ DStheme is a clean, minimal writer's portfolio WordPress Theme.
 
 == Credits ==
 
-* Bootstrap http://getbootstrap.com, (C) 2011-2016 Twitter, Inc., [MIT] (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+* Bootstrap http://getbootstrap.com, (C) 2011-2018 Twitter, Inc., [MIT] (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 * WP Bootstrap Navwalker https://github.com/wp-bootstrap/wp-bootstrap-navwalker, [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)
 * Font Awesome icons, SIL OFL 1.1 License - https://fontawesome.com/
 * Category images from Unsplash (https://unsplash.com/):
@@ -28,6 +28,9 @@ DStheme is a clean, minimal writer's portfolio WordPress Theme.
   dave michuda 54061
 
 == Changelog ==
+
+=Version 1.0.1
+* Added custom logo support
 
 = Version 1.0.0 =
 * Initial release

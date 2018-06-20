@@ -29,9 +29,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* ================ Body Styles ================ */
 
 body {
-    font-family: "Quattrocento Sans", sans-serif;
+    font-family:"Open Sans", sans-serif;
     color: #444;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 400;
 }
 a {
   -webkit-transition: all 0.3s ease-in-out;
@@ -315,7 +316,7 @@ article {
 }
 .single-content>p:first-child:first-letter {
     float: left;
-    font-size: 76px;
+    font-size: 68px;
     line-height: .6;
     /* Reduced from lh=1 to adjust drop-cap between FF and GC */
     font-family: 'Playfair Display', serif;

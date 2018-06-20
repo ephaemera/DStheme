@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php
+/**
+* Template for Page Not Found
+**/
+
+get_header(); ?>
     <div class="archive">
         <div class="container">
             <div class="entry-header">
@@ -20,7 +25,7 @@
                             <?php echo paginate_links(); ?>
                         </div>
                         <?php else : ?>
-                          <p><?php _e( 'Sorry, but nothing matched your search criteria. Please try again with some different keywords.', 'dstheme' ); ?></p>
+                          <p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'dstheme' ); ?></p>
                           <?php get_search_form(); ?>
                             <?php endif; ?>
         </div>

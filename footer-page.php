@@ -6,7 +6,7 @@
                 <?php if(is_active_sidebar('sharing-sidebar1')): ?>
                     <?php dynamic_sidebar('sharing-sidebar1'); ?>
                         <?php endif; ?>
-                        <div class=hd-search>
+                        <div class="hd-search">
                           <?php get_search_form(); ?>
                         </div>
             </div>
