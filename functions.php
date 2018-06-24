@@ -146,7 +146,7 @@
   // Enqueue Google Fonts
   function google_fonts() {
   	$query_args = array(
-  		'family' => 'Quattrocento+Sans:400,400i,700|Playfair+Display:400,400i,700',
+  		'family' => 'Muli:400,700|Unna:400,400i,700',
   		'subset' => 'latin,latin-text',
   	);
   	wp_register_style( 'google_fonts', add_query_arg( $query_args, "//fonts.googleapis.com/css" ), array(), null );
@@ -167,7 +167,7 @@
   function ds_theme_js() {
 
   wp_deregister_script('jquery');
-  wp_register_script('jquery', get_template_directory_uri() . '/js/jquery-3.3.1.min.js', array(), '', FALSE);
+  wp_register_script('jquery', get_template_directory_uri() . '/js/jquery-3.3.1.min.js', array(), '', true);
   wp_enqueue_script('popper_js', get_template_directory_uri() . '/js/popper.min.js', array('jquery'), '', true );
   wp_enqueue_script('bootstrap_js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '', true );
   wp_enqueue_script('top_js', get_template_directory_uri() . '/js/top.js', array('jquery'), '', true );

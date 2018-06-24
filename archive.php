@@ -5,10 +5,11 @@
                 <div class="row justify-content-sm-center">
                     <div class="col-sm col-md-9">
                         <?php if(have_posts()) : ?>
-                            <p>Archives</p>
+                            <p class="archive-label">Archives</p>
                             <h1><?php
               if ( is_category() ) {
                 single_cat_title();
+                echo category_description( $category_id );
               } elseif ( is_tag() ) {
                 single_tag_title();
               } elseif ( is_author() ) {

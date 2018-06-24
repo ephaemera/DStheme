@@ -29,9 +29,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* ================ Body Styles ================ */
 
 body {
-    font-family:"Open Sans", sans-serif;
+    font-family: 'Unna', serif;
     color: #444;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
 }
 a {
@@ -52,9 +52,9 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
+    font-weight: 700;
     color: #444;
+    line-height: 1.21;
 }
 h1 a,
 h2 a,
@@ -62,8 +62,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
+    font-weight: 700;
     color: #444;
 }
 h1 a:hover,
@@ -75,13 +74,12 @@ h6 a:hover {
     color: #b59f5b;
     text-decoration: none;
 }
+h1, .h1 {
+  font-size: 2.5rem;
+}
 img {
     max-width: 100%;
     height: auto;
-}
-.fa,
-.fas {
-    vertical-align: text-bottom;
 }
 
 /* ================== Navigation Styles ==================== */
@@ -105,6 +103,14 @@ img {
 .custom-logo-link img {
   max-width: 3rem;
   margin:1rem 1rem 1.25rem -1rem;
+  -webkit-transition: all 0.3s ease-in-out;
+	 -moz-transition: all 0.3s ease-in-out;
+	 -ms-transition: all 0.3s ease-in-out;
+	 -o-transition: all 0.3s ease-in-out;
+	 transition: all 0.3s ease-in-out;
+}
+.custom-logo-link img:hover {
+  opacity: .6;
 }
 .navbar-dark .navbar-toggler {
     color: rgba(255, 255, 255, 1);
@@ -132,9 +138,10 @@ img {
 .nav-item {
     text-transform: uppercase;
     letter-spacing: 4px;
+    font-family: 'Muli', sans-serif;
 }
 .active {
-    font-weight: bold;
+    font-weight: 700;
 }
 .form-inline {
     padding: 1.5rem 0;
@@ -149,39 +156,34 @@ img {
     text-align: center;
     padding-top: 2rem;
 }
-.entry-header h1 {
-    font-size: 3rem;
-}
 .entry-header h1,
 .single entry-header h1 {
-    font-weight: normal;
+    font-weight: 400;
 }
-.single .entry-header p {
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
+.single .entry-header p, .excerpt {
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: .5px;
 }
 .page-single img,
 .single .entry-header p, .single .entry-header img {
     padding-bottom: 1rem;
 }
-.entry-header-excerpt {
-    margin-top: .2rem;
-}
 .entry-header-excerpt p {
-    margin-bottom: .1rem;
+    margin-bottom: 0;
+    font-size: 1.25rem;
+    //margin-top: -.25rem;
+    line-height: 1.5;
 }
 .single .entry-header-excerpt p {
-    font-weight: bold;
-}
-.page-single .entry {
-    padding-top: .75rem;
+    font-weight: 400;
 }
 .archive .entry-header {
-    padding: 6.0625rem 0;
+    padding: 2.25rem 0;
 }
 @media (min-width: 768px) {
     .entry-archive h2 {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         margin: 0;
         text-align: right;
     }
@@ -195,6 +197,8 @@ img {
     text-transform: uppercase;
     letter-spacing: 4px;
     list-style-type: none;
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
 }
 .post-categories a {
     color: #fff;
@@ -211,19 +215,29 @@ img {
 .page-single img {
     padding-bottom: 1rem;
 }
+@media (max-width: 768px) {
+    .page h2 {
+      font-size:1.5rem;
+    }
+}
 .read-more,
 .read-more-excerpt,
-p.meta {
+.meta {
     font-size: .75rem;
     line-height: 1;
     color: #333;
-    font-weight: bold;
+    font-weight: 700;
     display: inline-block;
+    padding-bottom: 1rem;
 }
-p.meta a {
+.read-more,
+.read-more-excerpt {
+  font-family: 'Muli', sans-serif;
+}
+.meta a {
     color: #b59f5b;
 }
-p.meta a:hover {
+.meta a:hover {
     color: #333;
     text-decoration: none;
 }
@@ -234,7 +248,7 @@ p.meta a:hover {
 }
 .jumbotron-fluid,
 .jumbotron {
-    padding: 8rem 2rem;
+    padding: 6rem 2rem;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -261,8 +275,14 @@ p.meta a:hover {
 .jumbotron h1,
 .jumbotron h1 a {
     color: #fff;
-    padding-bottom: .5rem;
-    font-weight: normal;
+    padding-bottom: .25rem;
+    font-weight: 400;
+}
+@media (max-width: 768px) {
+  .jumbotron h1,
+  .jumbotron h1 a {
+      font-size: 2rem;
+  }
 }
 .jumbotron h1 a:hover {
     color: #b59f5b;
@@ -276,22 +296,31 @@ p.meta a:hover {
 }
 .jumbotron p {
     color: #fff;
+    font-weight:400;
 }
 .jumbotron a.read-more,
 .jumbotron .meta a {
     color: #efefef;
-    font-weight: normal;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 .jumbotron a.read-more:hover {
     color: #b59f5b;
 }
 .latest {
     padding: 3rem 0 1rem;
+    font-family: 'Muli', sans-serif;
 }
 .latest p {
-    font-weight: bold;
-    letter-spacing: 4px;
+    font-weight: 700;
+    letter-spacing: 2px;
     text-transform: uppercase;
+    font-size: .75rem;
+}
+.archive h1 p {
+  font-size: 1rem;
+  padding: 1.75rem;
+  letter-spacing: .25px;
 }
 .archive a {
     color: #444;
@@ -300,40 +329,42 @@ p.meta a:hover {
     color: #b59f5b;
     text-decoration: none;
 }
+.archive-label {
+    font-family: 'Muli', sans-serif;
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
 article {
     padding: 0 3rem 3rem;
 }
 .drop-cap {
+    display: block;
     float: left;
-    font-size: 76px;
-    line-height: .6;
-    /* Reduced from lh=1 to adjust drop-cap between FF and GC */
-    font-family: 'Playfair Display', serif;
-    padding-right: 6px;
-    margin-bottom: -6px;
-    margin-top: 10px;
-    /* added to adjust drop-cap between FF and GC */
+    line-height: .5;
+    margin-right: 5px;
+    margin-top: 15px;
+    font-size: 90px;
+    font-weight: 400;
 }
-.single-content>p:first-child:first-letter {
+//.single-content>p:first-child:first-letter {
+    display: block;
     float: left;
-    font-size: 68px;
-    line-height: .6;
+    font-size: 78px;
+    line-height: .5;
     /* Reduced from lh=1 to adjust drop-cap between FF and GC */
-    font-family: 'Playfair Display', serif;
-    padding-right: 6px;
-    margin-bottom: -6px;
-    margin-top: 10px;
+    margin-right: 5px;
+    margin-top: 22px;
     /* added to adjust drop-cap between FF and GC */
 }
 blockquote {
-    font-family: 'Playfair Display', serif;
     text-align: center;
     border-top: 1px dotted #ddd;
     border-bottom: 1px dotted #ddd;
     padding: .5rem 1rem;
     margin: 2.5rem 0;
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 1.25rem;
+    font-style: italic;
 }
 blockquote:before {
     color: #444;
@@ -341,10 +372,10 @@ blockquote:before {
     font-size: 4em;
     line-height: .2em;
     margin-right: 0;
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
+    font-weight: 400;
     font-style: normal;
     background: #fff;
+    font-family: 'Unna', serif;
 }
 blockquote p {
     margin-top: -1.25rem;
@@ -358,13 +389,13 @@ blockquote p {
 
 .post-nav {
     padding: 2rem 0 1.5rem;
-    display: none;
+    visibility: hidden;
 }
 .post-nav a {
     color: #b59f5b;
     font-size: 1rem;
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+    font-weight: 700;
     line-height: 1;
     display: inline-block;
 }
@@ -402,7 +433,7 @@ blockquote p {
     padding: 0 .0625rem;
     text-decoration: none;
     color: #444;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 /* =============== Post/Page Caption Styles ================= */
@@ -440,8 +471,8 @@ img.aligncenter {
     margin-right: auto
 }
 .wp-caption {
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
+    font-family: 'Muli', sans-serif;
+    font-weight: 700;
     font-size: .75rem;
     max-width: 100%;
 }
@@ -476,7 +507,8 @@ img.aligncenter {
     padding: .5rem 0 1rem;
     text-align: left;
     font-size: .75rem;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Muli', sans-serif;
+    font-weight: 700;
 }
 
 /* Text meant only for screen readers ----------------- */
@@ -497,7 +529,7 @@ img.aligncenter {
     display: block;
     font-size: 14px;
     font-size: 0.875rem;
-    font-weight: bold;
+    font-weight: 700;
     height: auto;
     left: 5px;
     line-height: normal;
@@ -543,10 +575,10 @@ footer a:hover,
 }
 .sidebar-module h4 {
     font-size: 1rem;
-    font-family: "Quattrocento Sans", sans-serif;
+    font-family: 'Muli', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    font-weight: bold;
+    letter-spacing: 2px;
+    font-weight: 700;
 }
 .left-widget {
     text-align: left !important;
@@ -575,7 +607,7 @@ footer a:hover,
 .social li {
     display: inline;
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1rem;
 }
 .social a {
@@ -586,20 +618,23 @@ footer a:hover,
     color: #b59f5b;
     text-decoration: none;
 }
-p.copyright {
-    color: #444;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+.copyright {
+    color: #999;
+    letter-spacing: 1px;
     font-size: .5rem;
     padding: 1rem 0 0;
+    font-family: 'Muli', sans-serif;
 }
-p.top {
+.top {
     font-size: 1.5rem;
     padding: 2rem 0 0;
     border-top: 1px dotted #ddd;
 }
-p.top a {
+.top a {
     color: #444;
+}
+.top a:hover {
+    color: #b59f5b;
 }
 
 /* ============== Comments ================== */
@@ -627,8 +662,9 @@ p.top a {
 }
 .comments .bypostauthor {}
 .comment-reply-title {
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Muli', sans-serif;
     font-size: 1.5rem;
+    font-weight: 700;
 }
 .comment-author img {
     display: none;
@@ -641,7 +677,7 @@ p.top a {
 input[type="submit" i] {
     background-color: #444;
     color: #fff;
-    font-family: "Quattrocento Sans", sans-serif;
+    font-family: 'Muli', sans-serif;
     letter-spacing: 2px;
 }
 input[type="submit" i]:hover {
@@ -674,8 +710,10 @@ article .comment-body {
 */
 
 .rp4wp-related-posts h3 {
+    font-family: 'Muli', sans-serif;
     font-size: 1.5rem;
     padding-bottom: 1rem;
+    font-weight: 700;
 }
 .rp4wp-related-posts ul>li {
     list-style: none;
@@ -688,8 +726,8 @@ article .comment-body {
 }
 .rp4wp-related-post-content a {
     color: #444;
-    font-weight: bold;
-    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-family: 'Muli', sans-serif;
 }
 .rp4wp-related-post-content a:hover {
     color: #b59f5b;
@@ -713,10 +751,23 @@ article .comment-body {
 }
 .dgwt-jg-caption__font--14 {
     font-size: 12pt !important;
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Muli', sans-serif;
     letter-spacing: 0 !important;
+    font-weight: 400 !important;
 }
-
+.dgwt-jg-effect-layla .dgwt-jg-item .dgwt-jg-caption > span {
+    font-weight: 400 !important;
+    padding: .5rem !important;
+    font-family: 'Muli', sans-serif;
+}
+.dgwt-jg-effect-standard .dgwt-jg-caption span {
+  font-weight: 400 !important;
+  padding: .5rem !important;
+  font-family: 'Muli', sans-serif;
+}
+.pswp__caption h4 {
+  font-weight: 400 !important;
+}
 /*     Ajax Search Lite Plugin Override */
 
 .hd-search {

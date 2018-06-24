@@ -12,7 +12,9 @@
                                       <?php the_title(); ?>
                                       </a>
                                     </h1>
+                                    <div class="excerpt">
                                     <?php the_excerpt(); ?>
+                                    </div>
                                         <p><a href="<?php the_permalink(); ?>" class="read-more">Read More <i class="fas fa-angle-right"></i></a></p>
                                         <?php wp_reset_postdata(); ?>
                                             <?php endwhile; ?>

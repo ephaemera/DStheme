@@ -4,6 +4,7 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="<?php bloginfo('description'); ?>">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700|Unna:400,400i,700" rel="stylesheet">
     <style>
       .jumbotron {
         background: url(<?php echo get_theme_mod('jumbotron_image', get_template_directory_uri().'/img/jumbotron.jpg'); ?>);

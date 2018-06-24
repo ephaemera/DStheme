@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-    <div class="//jumbotron //jumbotron-fluid page single">
+    <div class="page single">
         <div class="container">
             <div class="entry-header">
                 <div class="row justify-content-sm-center">
